@@ -6,7 +6,7 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        padding: 8px;
+        padding: 0 8px;
         box-sizing: border-box;
         position: absolute;
         bottom: 0;
@@ -17,16 +17,30 @@
     }
 
     .ui-component.icon {
+        transition: 0.2s;
         color: black;
         font-size: 32px;
     }
 
+    .ui-component.icon-active {
+        color: red;
+    }
+
     .ui-component.icon-container {
         display: flex;
+        flex: 1;
+        height: 100%;
+        max-width: 100px;
         justify-content: center;
         align-items: center;
-        height: 32px;
-        width: 32px;
+        cursor: pointer;
+
         position: relative;
     }
+
+    .ui-component.icon-container:hover > .ui-component.icon {
+        transition: 0.2s;
+        color: red;
+    }
+
 </style>

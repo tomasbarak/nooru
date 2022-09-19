@@ -15,5 +15,12 @@
     <%- include(rootPath + 'css/components/nav-bar.ejs') %> 
     <%- include(rootPath + 'html/components/footer.ejs') %> 
     <%- include(rootPath + 'css/components/footer.ejs') %> 
+    <%- include(rootPath + 'css/components/pub_normal.ejs') %>
+
+    <div class="posts-container">
+        <% for (let i = 0; i < 25; i++) { %>
+            <%- include(rootPath + 'html/components/publicacion_normal.ejs') %>
+        <% } %> 
+    </div>
 </body>
 </html>
