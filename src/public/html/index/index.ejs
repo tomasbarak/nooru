@@ -17,10 +17,6 @@
     <%- include(rootPath + 'css/components/footer.ejs') %> 
     <%- include(rootPath + 'css/components/pub_normal.ejs') %>
 
-    <div class="posts-container">
-        <% for (let i = 0; i < 25; i++) { %>
-            <%- include(rootPath + 'html/components/publicacion_normal.ejs') %>
-        <% } %> 
-    </div>
+    <a style="position: absolute; top: 50%" onclick="window.open('/redirect', 'firebaseAuth', 'height=315,width=400');">SpotifySignIn</a>
 </body>
 </html>
